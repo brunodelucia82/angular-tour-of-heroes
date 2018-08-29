@@ -10,6 +10,10 @@ import { MessageService } from './message.service';
 })
 export class HeroService {
 
+  newSelect(hero: Hero): void {
+    this.messageService.add(`Hero ${hero.name} selected`);
+  }
+
   getHeroes(): Observable<Hero[]> {
     this.messageService.add('HeroService: fetched heroes');
     return of(HEROES);
