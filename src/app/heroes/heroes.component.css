@@ -1,4 +1,13 @@
 /* HeroesComponent's private CSS styles */
+div.left, div.right {
+  display: inline-block;
+  box-sizing: border-box;
+  max-width: 40%;
+  vertical-align: top;
+}
+div.right {
+  padding-left: 2em;
+}
 .selected {
   background-color: #CFD8DC !important;
   color: white;
